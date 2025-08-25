@@ -1,0 +1,48 @@
+<!-- Futuristic E-Commerce Home -->
+<main class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 relative overflow-hidden">
+
+    <!-- Animated Background Elements -->
+
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="grid grid-cols-12 h-full">
+                @for (i of [1,2,3,4,5,6,7,8,9,10,11,12]; track i) {
+                <div class="border-r border-cyan-400/20"></div>
+                }
+            </div>
+            <div class="absolute inset-0">
+                @for (i of [1,2,3,4,5,6,7,8]; track i) {
+                <div class="border-b border-cyan-400/20 h-24"></div>
+                }
+            </div>
+        </div>
+
+        <!-- Floating Particles -->
+        <div class="absolute top-20 left-10 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-75"></div>
+        <div class="absolute top-40 right-20 w-1 h-1 bg-purple-400 rounded-full animate-pulse opacity-50"></div>
+        <div class="absolute bottom-40 left-1/4 w-3 h-3 bg-blue-400 rounded-full animate-bounce opacity-60"></div>
+    </div>
+
+    <section class="relative z-10 space-y-32">
+
+        <!-- Futuristic Hero Section -->
+        <app-hero></app-hero>
+
+        <!-- Futuristic New Arrivals Section -->
+        <app-new-arrivals></app-new-arrivals>
+
+        <!-- Futuristic Categories Section -->
+        <app-home-categories></app-home-categories>
+
+        <!-- Futuristic Bestsellers Section -->
+        <app-best-sellers></app-best-sellers>
+
+        <!-- Futuristic Promo Banner -->
+        <app-promo></app-promo>
+
+        <!-- Futuristic Features Section -->
+        <app-features></app-features>
+
+    </section>
+</main>
